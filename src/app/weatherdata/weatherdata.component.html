@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="wrapper">
+  <div class="top_navbar">
+    <div class="top_menu">
+      <div class="logo">
+        <a routerLink="">YO-YO WEATHER</a>
+      </div>
+      <ul>
+
+
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+</head>
+<body>
+
+
+<h4>Welocome to App</h4>
+<div class="div" style="margin-bottom:20px center;">
+</div>
+<div class="card text-center">
+    <div class="card-header">
+      Featured
+    </div>
+    <div *ngIf="current_data" class="card-body" style="color: #00ccff;">
+      <h2 class="card-title">Weather Details </h2>
+      <h2>Location:{{location_data.name}} </h2>
+      <h2>Humidity:{{current_data.humidity}} </h2>
+      <h2>Temprature:{{current_data.temperature}} cel</h2>
+      <h2>Wind Speed:{{current_data.wind_speed}} Km/hr</h2>
+      <h2>Pressure : {{current_data.pressure}} Pa</h2>
+      
+      <a href="#" class="btn btn-primary" style="max-top: 10px;">Back</a>
+    </div>
+    <div class="card-footer text-muted">
+      2 days ago
+    </div>
+  </div>

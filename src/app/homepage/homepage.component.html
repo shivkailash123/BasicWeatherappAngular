@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="wrapper">
+  <div class="top_navbar">
+    <div class="top_menu">
+      <div class="logo">
+        <a routerLink="/user">YO-YO WEATHER</a>
+      </div>
+      <ul>
+
+
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+</head>
+<body>
+   
+ 
+
+
+  <form class="container" [formGroup]="cityform" name="form" >
+  <p style="font-size:50px;color: blue; align-content: center; margin-bottom: 20px;">Enter City</p>
+  <p><input type="text" name="city"  for="city" formControlName="city" placeholder="city name"style="margin-right: 10px;" >
+    <button type="button" class="btn btn-info"  (click)="citydata()" > 
+      <span class="glyphicon glyphicon-search" ></span> Search 
+    </button>
+  </p>
+</form>
+
+</body>
